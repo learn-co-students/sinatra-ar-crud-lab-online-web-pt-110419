@@ -1,4 +1,5 @@
 <% @articles.each do |article| %>
-<&= article.title %>
-<&= article.content %>
-<& end%>
+// <a href="/articles/<%= article.id %>">
+<%= article.title %>
+
+<% end%>
