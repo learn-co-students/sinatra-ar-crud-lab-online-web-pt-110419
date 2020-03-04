@@ -1,0 +1,10 @@
+
+    <h1>Article #: <%=@article.id%>
+      <form action="./<%=@article.id%>/edit" method="get">
+      <input type="submit" name="submit" value="EDIT">
+    </form>
+      <form action="./<%=@article.id%>" method="post">
+      <label for="submit"></label><input id="submit" type="submit" name="_method" value="DELETE">
+    </form></h1>
+    <h2>Title: <%=@article.title%></h2>
+    <h3>Content: <%=@article.content%></h3>
