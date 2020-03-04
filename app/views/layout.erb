@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+  </head>
+  <body>
+       <%= yield %>
+       <p></p>
+     <h4>  <a href="/articles/new">New Article</a>
+     | <a href="/articles">List all articles</a>
+     <br><br>Go to Article #:
+    <% Article.all.each do |article| %>
+      <a href="/articles/<%=article.id%>"><%=article.id%></a>
+      <%end%></h4>
+  </body>
+</html>
